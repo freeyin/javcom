@@ -1,0 +1,17 @@
+{
+   "style_name": "icon",
+   "images": [
+        "..\\..\\..\\build\\images\\mock\\youbo.png",
+        "..\\..\\..\\build\\images\\mock\\live.png",
+        "..\\..\\..\\build\\images\\mock\\xianfeng.png"
+   ],
+   "orientation": "vertical",
+   "padding": 5,
+   "custom_styles": {
+      "display": "inline-block"
+   },
+   "stylesheet": "lib.scss",
+   "path_prefix": "../images/",
+   "output": "png",
+   "enable_cache_busting": true
+}

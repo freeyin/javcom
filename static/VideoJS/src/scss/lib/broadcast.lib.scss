@@ -1,0 +1,65 @@
+.broadcaster{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    .img{
+        display: block;
+        pointer-events: none;
+    }
+    .broad,.broad-item,.link{
+        width: 100%;
+        height: 100%;
+    }
+    .broad{
+        overflow: hidden; 
+    }
+    .fade{
+        position: absolute;
+        .broad-item{
+            position: absolute;
+            transition: 0.5s all;
+            -webkit-transition: 0.5s all;
+            -ms-transition: 0.5s all;
+            opacity: 0;
+            z-index: 1;
+            &:first-child{
+                opacity: 1;
+            }
+            .img{
+                width: 100%;
+            }
+            &.active{
+                opacity: 1;
+                z-index: 2;
+            }
+        }
+    }
+    .sustain{
+        width: 100%;
+    }
+    .pagenote{
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        z-index: 2;
+        .pagenote-item{
+            display: inline-block;
+            background:  rgba(0, 0, 0, 0.5);
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            margin: 0 2px;
+            @media screen and (max-width: 700px){
+                width: 5px;
+                height: 5px;
+                border-radius: 5px;
+                bottom: 5px;
+            }
+            &.active{
+                background: rgba(0, 0, 0, 0.9);
+            }
+        } 
+    }
+}

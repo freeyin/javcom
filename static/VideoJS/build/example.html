@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./css/common.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/play.min.css">
+</head>
+
+<body>
+    <main class="main wapper_wide">
+        <div class="flex_row">
+            <div class="master">
+                <div class="wapper_video">
+                    <video id="video" class="video-js"></video>
+                </div>
+            </div>
+        </div>
+    </main>
+   
+</body>
+<script src="./js/video.min.js"></script>
+<script src="./js/video-conrtib-ads.js"></script>
+<script src="./js/play.js"></script>
+<script>
+    var myVideo = initVideo({
+        id: 'video',
+        url: 'http://ginocdn.bybzj.com:8091/zimu/20170406/AHT6JNO135/1/hls/index.m3u8',
+        // ad:{
+        //     pre:{
+        //     url:'http://video.yjf138.com:8091/20180925/CpvE85VE/index.m3u8',
+        //     link:'http://pk1014.com/GR/p448ld2tn4',
+        //         //skip:5
+        //     },
+        //     pause:{
+        //     url:'/Tpl/custom/style/images/tyc.gif',
+        //     link:'https://www.28838833.com/?a=85745',
+        //     }
+        // }
+    });
+</script>
+
+</html>

@@ -1,0 +1,17 @@
+{
+   "style_name": "logo",
+   "images": [
+      "..\\..\\..\\build\\images\\mock\\slogan.png",
+      "..\\..\\..\\build\\images\\mock\\logo.png",
+      "..\\..\\..\\build\\images\\mock\\logo_b.png"
+   ],
+   "orientation": "vertical",
+   "padding": 5,
+   "custom_styles": {
+      "display": "inline-block"
+   },
+   "stylesheet": "lib.scss",
+   "path_prefix": "../images/",
+   "output": "png",
+   "enable_cache_busting": true
+}
