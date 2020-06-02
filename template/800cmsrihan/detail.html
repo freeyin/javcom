@@ -18,26 +18,9 @@
 <!--[if lte IE 9]><div class="mdui-text-center mdui-p-a-2 mdui-typo lteie9">您的浏览器版本太低了，为了能更好的体验本站，请升级您的浏览器。下载最新版本的浏览器：<a href="http://ie.microsoft.com" target="_blank">IE</a>、<a href="http://www.google.cn/chrome/" target="_blank">chrome(谷歌浏览器)</a>、<a href="http://www.firefox.com.cn/" target="_blank">Firefox(火狐浏览器)</a>，推荐使用谷歌浏览器</div><![endif]--><!-- 顶部工具栏开始 -->
  <?php  include('./template/'.$web_moban.'/header.html');?>
 <!-- 通栏广告结束 --><div class="show-videos-container"><div class="mdui-row flex-grid playerbox"><div class="mdui-m-a-0 mdui-p-a-0 mdui-col-xs-12 mdui-col-md-9 playerarea-left">
-								<video id='myVideo'  class="video-js"></video>
-											<link rel="stylesheet" type="text/css" href="/static/VideoJS/video.min.css?v=3">
-											<script type="text/javascript" src="/static/VideoJS/video.min.js?v=1" charset="utf-8" > </script>
-												<script type="text/javascript" src="/static/VideoJS/video-conrtib-ads.js?v=1" charset="utf-8" > </script>
-												<script type="text/javascript" src="/static/VideoJS/myVideo.js?v=6" charset="utf-8" > </script>
-												<script type="text/javascript">
-												var vPath = '<?php JCCMS_SQL($JCCMS_SQL,'0','JCCMS_SQL_playurl');?>';
-												var logo = '';
-												var myVideo=initVideo({
-                                                    id:'myVideo',
-                                                    url:vPath,
-													ad:{
-                                                      pre:{
-                                                          url:'',
-                                                          link:'',
-                                                      },
-												  	},
-
-												});
-												</script></div
+        <div id="video" style="width: 1220px; height: 580px;">
+<iframe width="100%" height="100%" src="https://www.coolcoolcloud.com/m3u8.php?url=<?php JCCMS_SQL($JCCMS_SQL,'0','JCCMS_SQL_playurl');?>" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>	
+</div
 
 
 ></div></div></div></div><!-- 视频详情介绍开始 --><div class="mdui-container main-container mdui-typo video-details"><div class="mdui-row-xs-1 mdui-row-sm-2 mdui-p-y-2 mdui-text-center banner-ad">
